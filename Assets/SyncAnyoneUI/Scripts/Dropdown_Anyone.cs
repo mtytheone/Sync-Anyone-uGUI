@@ -24,8 +24,7 @@ public class Dropdown_Anyone : UdonSharpBehaviour
     [SerializeField] Text _numText;
     [SerializeField] Text _contentText;
 
-    [UdonSynced]
-    int _value;
+    [UdonSynced] int _value;
 
     void Start()
     {

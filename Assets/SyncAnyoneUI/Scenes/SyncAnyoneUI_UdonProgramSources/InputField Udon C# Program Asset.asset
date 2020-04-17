@@ -30,13 +30,12 @@ MonoBehaviour:
     \       \r\n         # using VRC.SDKBase;\r\n        \r\n         # using VRC.Udon;\r\n
     \       \r\n         # public class InputField_Anyone : UdonSharpBehaviour\r\n.code_start\r\n
     \       \r\n         # InputField _inputField;\r\n        \r\n         # [SerializeField]
-    Text _contentText;\r\n        \r\n         # [UdonSynced]\r\n        \r\n         #
-    string _content;\r\n        \r\n         # void Start()\r\n    .export _start\r\n
-    \       \r\n    _start:\r\n        \r\n        PUSH, __0_const_intnl_SystemUInt32\r\n
-    \       PUSH, __0_intnl_returnTarget_UInt32\r\n        COPY\r\n        \r\n         #
-    {\r\n        \r\n         # _inputField = this.gameObject.GetComponent<InputField>();\r\n
-    \       PUSH, __0_this_intnl_UnityEngineGameObject\r\n        PUSH, __0_intnl_UnityEngineTransform\r\n
-    \       EXTERN, \"UnityEngineGameObject.__get_transform__UnityEngineTransform\"\r\n
+    Text _contentText;\r\n        \r\n         # [UdonSynced] string _content;\r\n
+    \       \r\n         # void Start()\r\n    .export _start\r\n        \r\n    _start:\r\n
+    \       \r\n        PUSH, __0_const_intnl_SystemUInt32\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
+    \       COPY\r\n        \r\n         # {\r\n        \r\n         # _inputField
+    = this.gameObject.GetComponent<InputField>();\r\n        PUSH, __0_this_intnl_UnityEngineGameObject\r\n
+    \       PUSH, __0_intnl_UnityEngineTransform\r\n        EXTERN, \"UnityEngineGameObject.__get_transform__UnityEngineTransform\"\r\n
     \       PUSH, __0_intnl_UnityEngineTransform\r\n        PUSH, __0_const_intnl_SystemType\r\n
     \       PUSH, __0_intnl_UnityEngineUIInputField\r\n        EXTERN, \"UnityEngineUIInputField.__GetComponent__T\"\r\n
     \       PUSH, __0_intnl_UnityEngineUIInputField\r\n        PUSH, _inputField\r\n
@@ -322,323 +321,323 @@ MonoBehaviour:
     - startInstruction: 0
       endInstruction: -1
       startSourceChar: 5412
-      endSourceChar: 5429
+      endSourceChar: 5424
       line: 25
       lineChar: 5
-      spanCodeSection: "UdonSynced]\r\n    "
+      spanCodeSection: 'UdonSynced] '
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 5429
-      endSourceChar: 5429
-      line: 26
-      lineChar: 4
+      startSourceChar: 5424
+      endSourceChar: 5424
+      line: 25
+      lineChar: 17
       spanCodeSection: 
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 5429
-      endSourceChar: 5453
-      line: 26
-      lineChar: 4
+      startSourceChar: 5424
+      endSourceChar: 5448
+      line: 25
+      lineChar: 17
       spanCodeSection: "string _content;\r\n\r\n    "
     - startInstruction: 0
       endInstruction: 19
-      startSourceChar: 5453
-      endSourceChar: 5471
-      line: 28
+      startSourceChar: 5448
+      endSourceChar: 5466
+      line: 27
       lineChar: 4
       spanCodeSection: "void Start()\r\n    "
     - startInstruction: 20
       endInstruction: 19
-      startSourceChar: 5471
-      endSourceChar: 5482
-      line: 29
+      startSourceChar: 5466
+      endSourceChar: 5477
+      line: 28
       lineChar: 4
       spanCodeSection: "{\r\n        "
     - startInstruction: 20
       endInstruction: 19
-      startSourceChar: 5482
-      endSourceChar: 5482
-      line: 30
+      startSourceChar: 5477
+      endSourceChar: 5477
+      line: 29
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 20
       endInstruction: 19
-      startSourceChar: 5482
-      endSourceChar: 5496
-      line: 30
+      startSourceChar: 5477
+      endSourceChar: 5491
+      line: 29
       lineChar: 8
       spanCodeSection: '_inputField = '
     - startInstruction: 20
       endInstruction: 19
-      startSourceChar: 5496
-      endSourceChar: 5496
-      line: 30
+      startSourceChar: 5491
+      endSourceChar: 5491
+      line: 29
       lineChar: 22
       spanCodeSection: 
     - startInstruction: 20
       endInstruction: 19
-      startSourceChar: 5496
-      endSourceChar: 5496
-      line: 30
+      startSourceChar: 5491
+      endSourceChar: 5491
+      line: 29
       lineChar: 22
       spanCodeSection: 
     - startInstruction: 20
       endInstruction: 19
-      startSourceChar: 5496
-      endSourceChar: 5496
-      line: 30
+      startSourceChar: 5491
+      endSourceChar: 5491
+      line: 29
       lineChar: 22
       spanCodeSection: 
     - startInstruction: 20
       endInstruction: 19
-      startSourceChar: 5496
-      endSourceChar: 5501
-      line: 30
+      startSourceChar: 5491
+      endSourceChar: 5496
+      line: 29
       lineChar: 22
       spanCodeSection: this.
     - startInstruction: 20
       endInstruction: 19
-      startSourceChar: 5501
-      endSourceChar: 5512
-      line: 30
+      startSourceChar: 5496
+      endSourceChar: 5507
+      line: 29
       lineChar: 27
       spanCodeSection: gameObject.
     - startInstruction: 20
       endInstruction: 19
-      startSourceChar: 5512
-      endSourceChar: 5524
-      line: 30
+      startSourceChar: 5507
+      endSourceChar: 5519
+      line: 29
       lineChar: 38
       spanCodeSection: GetComponent
     - startInstruction: 20
       endInstruction: 19
-      startSourceChar: 5524
-      endSourceChar: 5525
-      line: 30
+      startSourceChar: 5519
+      endSourceChar: 5520
+      line: 29
       lineChar: 50
       spanCodeSection: <
     - startInstruction: 20
       endInstruction: 103
-      startSourceChar: 5525
-      endSourceChar: 5554
-      line: 30
+      startSourceChar: 5520
+      endSourceChar: 5549
+      line: 29
       lineChar: 51
       spanCodeSection: "InputField>();\r\n    }\r\n\r\n    "
     - startInstruction: 104
       endInstruction: 123
-      startSourceChar: 5554
-      endSourceChar: 5573
-      line: 33
+      startSourceChar: 5549
+      endSourceChar: 5568
+      line: 32
       lineChar: 4
       spanCodeSection: "void Update()\r\n    "
     - startInstruction: 124
       endInstruction: 123
-      startSourceChar: 5573
-      endSourceChar: 5584
-      line: 34
+      startSourceChar: 5568
+      endSourceChar: 5579
+      line: 33
       lineChar: 4
       spanCodeSection: "{\r\n        "
     - startInstruction: 124
       endInstruction: 123
-      startSourceChar: 5584
-      endSourceChar: 5584
-      line: 35
+      startSourceChar: 5579
+      endSourceChar: 5579
+      line: 34
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 124
       endInstruction: 123
-      startSourceChar: 5584
-      endSourceChar: 5604
-      line: 35
+      startSourceChar: 5579
+      endSourceChar: 5599
+      line: 34
       lineChar: 8
       spanCodeSection: '_contentText.text = '
     - startInstruction: 124
       endInstruction: 155
-      startSourceChar: 5604
-      endSourceChar: 5628
-      line: 35
+      startSourceChar: 5599
+      endSourceChar: 5623
+      line: 34
       lineChar: 28
       spanCodeSection: "_content;\r\n    }\r\n\r\n    "
     - startInstruction: 156
       endInstruction: 175
-      startSourceChar: 5628
-      endSourceChar: 5658
-      line: 38
+      startSourceChar: 5623
+      endSourceChar: 5653
+      line: 37
       lineChar: 4
       spanCodeSection: "public void SetContent()\r\n    "
     - startInstruction: 176
       endInstruction: 175
-      startSourceChar: 5658
-      endSourceChar: 5669
-      line: 39
+      startSourceChar: 5653
+      endSourceChar: 5664
+      line: 38
       lineChar: 4
       spanCodeSection: "{\r\n        "
     - startInstruction: 176
       endInstruction: 175
-      startSourceChar: 5669
-      endSourceChar: 5669
-      line: 40
+      startSourceChar: 5664
+      endSourceChar: 5664
+      line: 39
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 176
       endInstruction: 175
-      startSourceChar: 5669
-      endSourceChar: 5680
-      line: 40
+      startSourceChar: 5664
+      endSourceChar: 5675
+      line: 39
       lineChar: 8
       spanCodeSection: '_content = '
     - startInstruction: 176
       endInstruction: 175
-      startSourceChar: 5680
-      endSourceChar: 5680
-      line: 40
+      startSourceChar: 5675
+      endSourceChar: 5675
+      line: 39
       lineChar: 19
       spanCodeSection: 
     - startInstruction: 176
       endInstruction: 175
-      startSourceChar: 5680
-      endSourceChar: 5692
-      line: 40
+      startSourceChar: 5675
+      endSourceChar: 5687
+      line: 39
       lineChar: 19
       spanCodeSection: _inputField.
     - startInstruction: 176
       endInstruction: 227
-      startSourceChar: 5692
-      endSourceChar: 5712
-      line: 40
+      startSourceChar: 5687
+      endSourceChar: 5707
+      line: 39
       lineChar: 31
       spanCodeSection: "text;\r\n    }\r\n\r\n    "
     - startInstruction: 228
       endInstruction: 247
-      startSourceChar: 5712
-      endSourceChar: 5744
-      line: 43
+      startSourceChar: 5707
+      endSourceChar: 5739
+      line: 42
       lineChar: 4
       spanCodeSection: "public void ChangerOwner()\r\n    "
     - startInstruction: 248
       endInstruction: 247
-      startSourceChar: 5744
-      endSourceChar: 5755
-      line: 44
+      startSourceChar: 5739
+      endSourceChar: 5750
+      line: 43
       lineChar: 4
       spanCodeSection: "{\r\n        "
     - startInstruction: 248
       endInstruction: 247
-      startSourceChar: 5755
-      endSourceChar: 5759
-      line: 45
+      startSourceChar: 5750
+      endSourceChar: 5754
+      line: 44
       lineChar: 8
       spanCodeSection: if (
     - startInstruction: 248
       endInstruction: 247
-      startSourceChar: 5759
-      endSourceChar: 5760
-      line: 45
+      startSourceChar: 5754
+      endSourceChar: 5755
+      line: 44
       lineChar: 12
       spanCodeSection: '!'
     - startInstruction: 248
       endInstruction: 247
-      startSourceChar: 5760
-      endSourceChar: 5779
-      line: 45
+      startSourceChar: 5755
+      endSourceChar: 5774
+      line: 44
       lineChar: 13
       spanCodeSection: Networking.IsOwner(
     - startInstruction: 248
       endInstruction: 247
-      startSourceChar: 5779
-      endSourceChar: 5779
-      line: 45
+      startSourceChar: 5774
+      endSourceChar: 5774
+      line: 44
       lineChar: 32
       spanCodeSection: 
     - startInstruction: 248
       endInstruction: 247
-      startSourceChar: 5779
-      endSourceChar: 5790
-      line: 45
+      startSourceChar: 5774
+      endSourceChar: 5785
+      line: 44
       lineChar: 32
       spanCodeSection: Networking.
     - startInstruction: 248
       endInstruction: 263
-      startSourceChar: 5790
-      endSourceChar: 5803
-      line: 45
+      startSourceChar: 5785
+      endSourceChar: 5798
+      line: 44
       lineChar: 43
       spanCodeSection: 'LocalPlayer, '
     - startInstruction: 264
       endInstruction: 263
-      startSourceChar: 5803
-      endSourceChar: 5803
-      line: 45
+      startSourceChar: 5798
+      endSourceChar: 5798
+      line: 44
       lineChar: 56
       spanCodeSection: 
     - startInstruction: 264
       endInstruction: 263
-      startSourceChar: 5803
-      endSourceChar: 5808
-      line: 45
+      startSourceChar: 5798
+      endSourceChar: 5803
+      line: 44
       lineChar: 56
       spanCodeSection: this.
     - startInstruction: 264
       endInstruction: 335
-      startSourceChar: 5808
-      endSourceChar: 5821
-      line: 45
+      startSourceChar: 5803
+      endSourceChar: 5816
+      line: 44
       lineChar: 61
       spanCodeSection: 'gameObject)) '
     - startInstruction: 336
       endInstruction: 335
-      startSourceChar: 5821
-      endSourceChar: 5821
-      line: 45
+      startSourceChar: 5816
+      endSourceChar: 5816
+      line: 44
       lineChar: 74
       spanCodeSection: 
     - startInstruction: 336
       endInstruction: 335
-      startSourceChar: 5821
-      endSourceChar: 5841
-      line: 45
+      startSourceChar: 5816
+      endSourceChar: 5836
+      line: 44
       lineChar: 74
       spanCodeSection: Networking.SetOwner(
     - startInstruction: 336
       endInstruction: 335
-      startSourceChar: 5841
-      endSourceChar: 5841
-      line: 45
+      startSourceChar: 5836
+      endSourceChar: 5836
+      line: 44
       lineChar: 94
       spanCodeSection: 
     - startInstruction: 336
       endInstruction: 335
-      startSourceChar: 5841
-      endSourceChar: 5852
-      line: 45
+      startSourceChar: 5836
+      endSourceChar: 5847
+      line: 44
       lineChar: 94
       spanCodeSection: Networking.
     - startInstruction: 336
       endInstruction: 351
-      startSourceChar: 5852
-      endSourceChar: 5865
-      line: 45
+      startSourceChar: 5847
+      endSourceChar: 5860
+      line: 44
       lineChar: 105
       spanCodeSection: 'LocalPlayer, '
     - startInstruction: 352
       endInstruction: 351
-      startSourceChar: 5865
-      endSourceChar: 5865
-      line: 45
+      startSourceChar: 5860
+      endSourceChar: 5860
+      line: 44
       lineChar: 118
       spanCodeSection: 
     - startInstruction: 352
       endInstruction: 351
-      startSourceChar: 5865
-      endSourceChar: 5870
-      line: 45
+      startSourceChar: 5860
+      endSourceChar: 5865
+      line: 44
       lineChar: 118
       spanCodeSection: this.
     - startInstruction: 352
       endInstruction: 352
-      startSourceChar: 5870
-      endSourceChar: 5870
-      line: 45
+      startSourceChar: 5865
+      endSourceChar: 5865
+      line: 44
       lineChar: 123
       spanCodeSection: 
   hasInteractEvent: 0

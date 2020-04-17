@@ -23,8 +23,7 @@ public class Button_Anyone : UdonSharpBehaviour
     Button _button;
     [SerializeField] Text _displayText;
 
-    [UdonSynced]
-    bool _result;
+    [UdonSynced] bool _result;
 
     void Start()
     {

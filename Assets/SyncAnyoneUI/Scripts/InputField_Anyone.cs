@@ -23,8 +23,7 @@ public class InputField_Anyone : UdonSharpBehaviour
     InputField _inputField;
     [SerializeField] Text _contentText;
 
-    [UdonSynced]
-    string _content;
+    [UdonSynced] string _content;
 
     void Start()
     {

@@ -22,8 +22,7 @@ public class Toggle_Anyone : UdonSharpBehaviour
 {
     Toggle _toggle;
 
-    [UdonSynced]
-    bool _result;
+    [UdonSynced] bool _result;
 
     void Start()
     {

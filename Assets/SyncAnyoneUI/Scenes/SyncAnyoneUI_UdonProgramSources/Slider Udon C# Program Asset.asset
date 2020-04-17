@@ -31,9 +31,9 @@ MonoBehaviour:
     \       \r\n         # using VRC.Udon;\r\n        \r\n         # public class
     Slider_Anyone : UdonSharpBehaviour\r\n.code_start\r\n        \r\n         # Slider
     _slider;\r\n        \r\n         # [SerializeField] Text _text;\r\n        \r\n
-    \        # [UdonSynced(UdonSyncMode.Linear)]\r\n        \r\n         # float _value;\r\n
-    \       \r\n         # void Start()\r\n    .export _start\r\n        \r\n    _start:\r\n
-    \       \r\n        PUSH, __0_const_intnl_SystemUInt32\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
+    \        # [UdonSynced(UdonSyncMode.Linear)] float _value;\r\n        \r\n         #
+    void Start()\r\n    .export _start\r\n        \r\n    _start:\r\n        \r\n
+    \       PUSH, __0_const_intnl_SystemUInt32\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
     \       COPY\r\n        \r\n         # {\r\n        \r\n         # _slider = this.gameObject.GetComponent<Slider>();\r\n
     \       PUSH, __0_this_intnl_UnityEngineGameObject\r\n        PUSH, __0_intnl_UnityEngineTransform\r\n
     \       EXTERN, \"UnityEngineGameObject.__get_transform__UnityEngineTransform\"\r\n
@@ -347,351 +347,351 @@ MonoBehaviour:
     - startInstruction: 0
       endInstruction: -1
       startSourceChar: 5417
-      endSourceChar: 5431
+      endSourceChar: 5426
       line: 25
       lineChar: 29
-      spanCodeSection: "Linear)]\r\n    "
+      spanCodeSection: 'Linear)] '
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 5431
-      endSourceChar: 5431
-      line: 26
-      lineChar: 4
+      startSourceChar: 5426
+      endSourceChar: 5426
+      line: 25
+      lineChar: 38
       spanCodeSection: 
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 5431
-      endSourceChar: 5452
-      line: 26
-      lineChar: 4
+      startSourceChar: 5426
+      endSourceChar: 5447
+      line: 25
+      lineChar: 38
       spanCodeSection: "float _value;\r\n\r\n    "
     - startInstruction: 0
       endInstruction: 19
-      startSourceChar: 5452
-      endSourceChar: 5470
-      line: 28
+      startSourceChar: 5447
+      endSourceChar: 5465
+      line: 27
       lineChar: 4
       spanCodeSection: "void Start()\r\n    "
     - startInstruction: 20
       endInstruction: 19
-      startSourceChar: 5470
-      endSourceChar: 5481
-      line: 29
+      startSourceChar: 5465
+      endSourceChar: 5476
+      line: 28
       lineChar: 4
       spanCodeSection: "{\r\n        "
     - startInstruction: 20
       endInstruction: 19
-      startSourceChar: 5481
-      endSourceChar: 5481
-      line: 30
+      startSourceChar: 5476
+      endSourceChar: 5476
+      line: 29
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 20
       endInstruction: 19
-      startSourceChar: 5481
-      endSourceChar: 5491
-      line: 30
+      startSourceChar: 5476
+      endSourceChar: 5486
+      line: 29
       lineChar: 8
       spanCodeSection: '_slider = '
     - startInstruction: 20
       endInstruction: 19
-      startSourceChar: 5491
-      endSourceChar: 5491
-      line: 30
+      startSourceChar: 5486
+      endSourceChar: 5486
+      line: 29
       lineChar: 18
       spanCodeSection: 
     - startInstruction: 20
       endInstruction: 19
-      startSourceChar: 5491
-      endSourceChar: 5491
-      line: 30
+      startSourceChar: 5486
+      endSourceChar: 5486
+      line: 29
       lineChar: 18
       spanCodeSection: 
     - startInstruction: 20
       endInstruction: 19
-      startSourceChar: 5491
-      endSourceChar: 5491
-      line: 30
+      startSourceChar: 5486
+      endSourceChar: 5486
+      line: 29
       lineChar: 18
       spanCodeSection: 
     - startInstruction: 20
       endInstruction: 19
-      startSourceChar: 5491
-      endSourceChar: 5496
-      line: 30
+      startSourceChar: 5486
+      endSourceChar: 5491
+      line: 29
       lineChar: 18
       spanCodeSection: this.
     - startInstruction: 20
       endInstruction: 19
-      startSourceChar: 5496
-      endSourceChar: 5507
-      line: 30
+      startSourceChar: 5491
+      endSourceChar: 5502
+      line: 29
       lineChar: 23
       spanCodeSection: gameObject.
     - startInstruction: 20
       endInstruction: 19
-      startSourceChar: 5507
-      endSourceChar: 5519
-      line: 30
+      startSourceChar: 5502
+      endSourceChar: 5514
+      line: 29
       lineChar: 34
       spanCodeSection: GetComponent
     - startInstruction: 20
       endInstruction: 19
-      startSourceChar: 5519
-      endSourceChar: 5520
-      line: 30
+      startSourceChar: 5514
+      endSourceChar: 5515
+      line: 29
       lineChar: 46
       spanCodeSection: <
     - startInstruction: 20
       endInstruction: 103
-      startSourceChar: 5520
-      endSourceChar: 5545
-      line: 30
+      startSourceChar: 5515
+      endSourceChar: 5540
+      line: 29
       lineChar: 47
       spanCodeSection: "Slider>();\r\n    }\r\n\r\n    "
     - startInstruction: 104
       endInstruction: 123
-      startSourceChar: 5545
-      endSourceChar: 5568
-      line: 33
+      startSourceChar: 5540
+      endSourceChar: 5563
+      line: 32
       lineChar: 4
       spanCodeSection: "void LateUpdate()\r\n    "
     - startInstruction: 124
       endInstruction: 123
-      startSourceChar: 5568
-      endSourceChar: 5579
-      line: 34
+      startSourceChar: 5563
+      endSourceChar: 5574
+      line: 33
       lineChar: 4
       spanCodeSection: "{\r\n        "
     - startInstruction: 124
       endInstruction: 123
-      startSourceChar: 5579
-      endSourceChar: 5579
-      line: 35
+      startSourceChar: 5574
+      endSourceChar: 5574
+      line: 34
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 124
       endInstruction: 123
-      startSourceChar: 5579
-      endSourceChar: 5595
-      line: 35
+      startSourceChar: 5574
+      endSourceChar: 5590
+      line: 34
       lineChar: 8
       spanCodeSection: '_slider.value = '
     - startInstruction: 124
       endInstruction: 147
-      startSourceChar: 5595
-      endSourceChar: 5612
-      line: 35
+      startSourceChar: 5590
+      endSourceChar: 5607
+      line: 34
       lineChar: 24
       spanCodeSection: "_value;\r\n        "
     - startInstruction: 148
       endInstruction: 147
-      startSourceChar: 5612
-      endSourceChar: 5612
-      line: 36
+      startSourceChar: 5607
+      endSourceChar: 5607
+      line: 35
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 148
       endInstruction: 147
-      startSourceChar: 5612
-      endSourceChar: 5625
-      line: 36
+      startSourceChar: 5607
+      endSourceChar: 5620
+      line: 35
       lineChar: 8
       spanCodeSection: '_text.text = '
     - startInstruction: 148
       endInstruction: 147
-      startSourceChar: 5625
-      endSourceChar: 5641
-      line: 36
+      startSourceChar: 5620
+      endSourceChar: 5636
+      line: 35
       lineChar: 21
       spanCodeSection: _value.ToString(
     - startInstruction: 148
       endInstruction: 211
-      startSourceChar: 5641
-      endSourceChar: 5662
-      line: 36
+      startSourceChar: 5636
+      endSourceChar: 5657
+      line: 35
       lineChar: 37
       spanCodeSection: "\"F2\");\r\n    }\r\n\r\n    "
     - startInstruction: 212
       endInstruction: 231
-      startSourceChar: 5662
-      endSourceChar: 5690
-      line: 39
+      startSourceChar: 5657
+      endSourceChar: 5685
+      line: 38
       lineChar: 4
       spanCodeSection: "public void SetValue()\r\n    "
     - startInstruction: 232
       endInstruction: 231
-      startSourceChar: 5690
-      endSourceChar: 5701
-      line: 40
+      startSourceChar: 5685
+      endSourceChar: 5696
+      line: 39
       lineChar: 4
       spanCodeSection: "{\r\n        "
     - startInstruction: 232
       endInstruction: 231
-      startSourceChar: 5701
-      endSourceChar: 5701
-      line: 41
+      startSourceChar: 5696
+      endSourceChar: 5696
+      line: 40
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 232
       endInstruction: 231
-      startSourceChar: 5701
-      endSourceChar: 5710
-      line: 41
+      startSourceChar: 5696
+      endSourceChar: 5705
+      line: 40
       lineChar: 8
       spanCodeSection: '_value = '
     - startInstruction: 232
       endInstruction: 231
-      startSourceChar: 5710
-      endSourceChar: 5710
-      line: 41
+      startSourceChar: 5705
+      endSourceChar: 5705
+      line: 40
       lineChar: 17
       spanCodeSection: 
     - startInstruction: 232
       endInstruction: 231
-      startSourceChar: 5710
-      endSourceChar: 5718
-      line: 41
+      startSourceChar: 5705
+      endSourceChar: 5713
+      line: 40
       lineChar: 17
       spanCodeSection: _slider.
     - startInstruction: 232
       endInstruction: 283
-      startSourceChar: 5718
-      endSourceChar: 5739
-      line: 41
+      startSourceChar: 5713
+      endSourceChar: 5734
+      line: 40
       lineChar: 25
       spanCodeSection: "value;\r\n    }\r\n\r\n    "
     - startInstruction: 284
       endInstruction: 303
-      startSourceChar: 5739
-      endSourceChar: 5771
-      line: 44
+      startSourceChar: 5734
+      endSourceChar: 5766
+      line: 43
       lineChar: 4
       spanCodeSection: "public void ChangerOwner()\r\n    "
     - startInstruction: 304
       endInstruction: 303
-      startSourceChar: 5771
-      endSourceChar: 5782
-      line: 45
+      startSourceChar: 5766
+      endSourceChar: 5777
+      line: 44
       lineChar: 4
       spanCodeSection: "{\r\n        "
     - startInstruction: 304
       endInstruction: 303
-      startSourceChar: 5782
-      endSourceChar: 5786
-      line: 46
+      startSourceChar: 5777
+      endSourceChar: 5781
+      line: 45
       lineChar: 8
       spanCodeSection: if (
     - startInstruction: 304
       endInstruction: 303
-      startSourceChar: 5786
-      endSourceChar: 5787
-      line: 46
+      startSourceChar: 5781
+      endSourceChar: 5782
+      line: 45
       lineChar: 12
       spanCodeSection: '!'
     - startInstruction: 304
       endInstruction: 303
-      startSourceChar: 5787
-      endSourceChar: 5806
-      line: 46
+      startSourceChar: 5782
+      endSourceChar: 5801
+      line: 45
       lineChar: 13
       spanCodeSection: Networking.IsOwner(
     - startInstruction: 304
       endInstruction: 303
-      startSourceChar: 5806
-      endSourceChar: 5806
-      line: 46
+      startSourceChar: 5801
+      endSourceChar: 5801
+      line: 45
       lineChar: 32
       spanCodeSection: 
     - startInstruction: 304
       endInstruction: 303
-      startSourceChar: 5806
-      endSourceChar: 5817
-      line: 46
+      startSourceChar: 5801
+      endSourceChar: 5812
+      line: 45
       lineChar: 32
       spanCodeSection: Networking.
     - startInstruction: 304
       endInstruction: 319
-      startSourceChar: 5817
-      endSourceChar: 5830
-      line: 46
+      startSourceChar: 5812
+      endSourceChar: 5825
+      line: 45
       lineChar: 43
       spanCodeSection: 'LocalPlayer, '
     - startInstruction: 320
       endInstruction: 319
-      startSourceChar: 5830
-      endSourceChar: 5830
-      line: 46
+      startSourceChar: 5825
+      endSourceChar: 5825
+      line: 45
       lineChar: 56
       spanCodeSection: 
     - startInstruction: 320
       endInstruction: 319
-      startSourceChar: 5830
-      endSourceChar: 5835
-      line: 46
+      startSourceChar: 5825
+      endSourceChar: 5830
+      line: 45
       lineChar: 56
       spanCodeSection: this.
     - startInstruction: 320
       endInstruction: 391
-      startSourceChar: 5835
-      endSourceChar: 5848
-      line: 46
+      startSourceChar: 5830
+      endSourceChar: 5843
+      line: 45
       lineChar: 61
       spanCodeSection: 'gameObject)) '
     - startInstruction: 392
       endInstruction: 391
-      startSourceChar: 5848
-      endSourceChar: 5848
-      line: 46
+      startSourceChar: 5843
+      endSourceChar: 5843
+      line: 45
       lineChar: 74
       spanCodeSection: 
     - startInstruction: 392
       endInstruction: 391
-      startSourceChar: 5848
-      endSourceChar: 5868
-      line: 46
+      startSourceChar: 5843
+      endSourceChar: 5863
+      line: 45
       lineChar: 74
       spanCodeSection: Networking.SetOwner(
     - startInstruction: 392
       endInstruction: 391
-      startSourceChar: 5868
-      endSourceChar: 5868
-      line: 46
+      startSourceChar: 5863
+      endSourceChar: 5863
+      line: 45
       lineChar: 94
       spanCodeSection: 
     - startInstruction: 392
       endInstruction: 391
-      startSourceChar: 5868
-      endSourceChar: 5879
-      line: 46
+      startSourceChar: 5863
+      endSourceChar: 5874
+      line: 45
       lineChar: 94
       spanCodeSection: Networking.
     - startInstruction: 392
       endInstruction: 407
-      startSourceChar: 5879
-      endSourceChar: 5892
-      line: 46
+      startSourceChar: 5874
+      endSourceChar: 5887
+      line: 45
       lineChar: 105
       spanCodeSection: 'LocalPlayer, '
     - startInstruction: 408
       endInstruction: 407
-      startSourceChar: 5892
-      endSourceChar: 5892
-      line: 46
+      startSourceChar: 5887
+      endSourceChar: 5887
+      line: 45
       lineChar: 118
       spanCodeSection: 
     - startInstruction: 408
       endInstruction: 407
-      startSourceChar: 5892
-      endSourceChar: 5897
-      line: 46
+      startSourceChar: 5887
+      endSourceChar: 5892
+      line: 45
       lineChar: 118
       spanCodeSection: this.
     - startInstruction: 408
       endInstruction: 408
-      startSourceChar: 5897
-      endSourceChar: 5897
-      line: 46
+      startSourceChar: 5892
+      endSourceChar: 5892
+      line: 45
       lineChar: 123
       spanCodeSection: 
   hasInteractEvent: 0

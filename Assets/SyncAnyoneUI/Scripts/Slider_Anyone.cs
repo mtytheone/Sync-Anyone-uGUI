@@ -23,8 +23,7 @@ public class Slider_Anyone : UdonSharpBehaviour
     Slider _slider;
     [SerializeField] Text _text;
 
-    [UdonSynced(UdonSyncMode.Linear)]
-    float _value;
+    [UdonSynced(UdonSyncMode.Linear)] float _value;
 
     void Start()
     {
